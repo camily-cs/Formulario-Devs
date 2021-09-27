@@ -1,0 +1,113 @@
+/*   (*) Representa todos os elementos da pág   */
+*{
+    margin: 0;
+    padding:0%;
+}
+
+#titulo{
+    font-family: sans-serif;
+    color: #380061;
+    margin-left: 7;
+}
+
+#subtitulo{
+    font-family: sans-serif;
+    color: #380061;
+    margin-inline-start: 4%;
+}
+
+#checkbox{
+    display: inline-block;
+}
+
+fieldset{
+    border: 0;   
+}
+
+body{
+    background-color: #F0F8FF;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #59429d;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+/* formatação dos locais de preenchimento de dados */
+input, select, textarea, button{
+    font-family: sans-serif; /* formato da fonte de preenchimento dos dados */
+    font-size: 1em; /* tam da fonte */
+    color: #59429d; /* cor da fonte de preenchimento dos dados */
+    border-radius: 4px; /* borda do local de preenchimento */
+}
+
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+
+
+.grupo::before, .grupo::after {
+    display: table;
+}
+
+.grupo::after {
+    clear: both;
+}
+
+.campo{
+    margin-bottom: 1em;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    color: #59429d;
+    display: block;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.campo select option{
+    padding-right: 1em;
+}
+
+/* colore o campo que a pessoa esta preenchendo */
+.campo input:focus, .campo select:focus, .campo textarea:focus{
+    background: #E0E0F8;
+}
+
+
+.btn {
+    font-size: 1.2em; /* TAM da fonte */
+    background: #59429d; /* cor do botao */
+    border: 2; /* borda */
+    margin-bottom: 1em; /* Distancia entre o botão e a margem do site*/
+    color: #fff; /* cor da fonte(letras) */
+    padding: 0.2em 0.6em; /* distancia entre o botao e a fonte */
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2); /* sombra do botao */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* sombra da fonte*/
+    position: absolute; /* posição do botao (relative:botaos lado a lado; absoluted:1 botao)*/ 
+    top: 92%; /* distancia do botao sobre topo do site */
+    left: 50%; /* distancia do botao sobre lateral do site */
+    margin-right: -50%; /* distancia entre botaos */
+    transform: translate(-50%, -50%);
+}
+
+/* Cor do botão ao passar o mouse  */
+.btn:hover {
+    background: #ccbbff;
+    box-shadow: inset 2px 2px 2px rgba(86, 17, 199, 0.2); /* colore a sombra inferior da margem superior do botao */
+    text-shadow: none;
+}
+
+.btn,select{
+    cursor: pointer; /* o cursor do mouse vira uma mãozinha */
+
+}
+
